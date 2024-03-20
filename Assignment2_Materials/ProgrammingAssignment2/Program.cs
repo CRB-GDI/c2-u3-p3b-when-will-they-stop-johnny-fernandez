@@ -34,11 +34,13 @@ namespace ProgrammingAssignment2
 				// course add more space between the
 				// comments as needed
 
+				float value = 
+				int score = 0;
+				int value = GetValue();
 
-
-				// Don't add or modify any code below
-				// this comment
-				input = Console.ReadLine();
+                // Don't add or modify any code below
+                // this comment
+                input = Console.ReadLine();
 			}
 		}
 
