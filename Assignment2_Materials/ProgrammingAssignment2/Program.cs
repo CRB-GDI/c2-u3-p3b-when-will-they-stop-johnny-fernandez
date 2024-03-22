@@ -1,4 +1,6 @@
 ﻿using System;
+using System.ComponentModel;
+using System.Threading;
 using LinkedLists;
 
 namespace ProgrammingAssignment2
@@ -34,9 +36,31 @@ namespace ProgrammingAssignment2
 				// course add more space between the
 				// comments as needed
 
-				float value = 
-				int score = 0;
+				int sum = 0;
+				int numCount = 0;
 				int value = GetValue();
+				float mean = 0;
+
+                while (value !=-1)
+				{
+					numCount++;
+					sum = sum + value;
+					value = GetValue();
+				}
+				if (numCount > 0)
+				{
+					mean = (float)sum / numCount;
+				}
+				Console.WriteLine(numCount + " " + mean);
+				
+					
+
+
+			
+				
+
+
+
 
                 // Don't add or modify any code below
                 // this comment
